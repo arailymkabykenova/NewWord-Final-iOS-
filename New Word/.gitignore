@@ -1,7 +1,7 @@
 # Xcode
 DerivedData/
 build/
-*.xcuserdata/
+**/xcuserdata/
 *.xcuserstate
 
 # Swift Package Manager
@@ -10,7 +10,3 @@ Package.resolved
 
 # CocoaPods
 Pods/
-
-# macOS
-.DS_Store
-
