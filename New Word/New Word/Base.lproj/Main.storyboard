@@ -35,7 +35,7 @@
                                             <constraint firstItem="cDl-GF-LUS" firstAttribute="centerY" secondItem="07G-jl-4wX" secondAttribute="centerY" id="whs-TY-Yp5"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Generated Image December 15, 2025 - 2_59PM" translatesAutoresizingMaskIntoConstraints="NO" id="cI0-c8-WFQ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstPageMe" translatesAutoresizingMaskIntoConstraints="NO" id="cI0-c8-WFQ" customClass="firstPageMe">
                                         <rect key="frame" x="0.0" y="63.666666666666657" width="402" height="312"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5XJ-kO-DQy">
@@ -47,12 +47,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jg4-No-1Tq">
                                                         <rect key="frame" x="5.0000000000000071" y="5" width="120.66666666666669" height="77.666666666666671"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="tinted" title="A1">
                                                             <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="20"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="chooseLevelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jzj-aq-Squ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -69,12 +73,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcT-Bk-blx">
                                                         <rect key="frame" x="5.0000000000000071" y="5" width="120.66666666666669" height="77.666666666666671"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="tinted" title="A2">
                                                             <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="20"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="chooseLevelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cLa-u7-1TA"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,12 +99,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPy-pV-PSM">
                                                         <rect key="frame" x="5.0000000000000071" y="5" width="120.66666666666669" height="77.666666666666671"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="tinted" title="B1">
                                                             <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="20"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="chooseLevelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CVE-g7-moO"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -123,7 +135,11 @@
                                                         <buttonConfiguration key="configuration" style="tinted" title="B2">
                                                             <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="28"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="chooseLevelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5dI-Ej-Qk5"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -140,15 +156,19 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAy-hN-sWW">
                                                         <rect key="frame" x="5" y="5" width="188.33333333333334" height="164.66666666666666"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="tinted" title="C1-C2">
                                                             <fontDescription key="titleFontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="28"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="chooseLevelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yrk-CK-NJY"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="labelColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="cAy-hN-sWW" firstAttribute="top" secondItem="guc-9s-Ix1" secondAttribute="top" constant="5" id="M2c-iK-mNB"/>
                                                     <constraint firstAttribute="trailing" secondItem="cAy-hN-sWW" secondAttribute="trailing" constant="5" id="Pgj-N1-JYt"/>
@@ -168,7 +188,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tuR-GB-oH2" secondAttribute="trailing" id="DhL-2v-B1P"/>
                             <constraint firstItem="tuR-GB-oH2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Q2X-dL-7bq"/>
@@ -180,17 +200,30 @@
                     </view>
                     <navigationItem key="navigationItem" id="cGb-3O-y3e"/>
                     <connections>
-                        <segue destination="ZF6-hx-stG" kind="show" id="6rB-eE-9aG"/>
+                        <outlet property="chooseLangLabel" destination="cDl-GF-LUS" id="e0G-eV-yFa"/>
+                        <outlet property="meImage" destination="cI0-c8-WFQ" id="dJX-kT-EH1"/>
+                        <outletCollection property="buttonLabelViews" destination="07G-jl-4wX" collectionClass="NSMutableArray" id="eDq-Ql-B4s"/>
+                        <outletCollection property="buttonLabelViews" destination="8Dq-72-Sbm" collectionClass="NSMutableArray" id="Dir-h7-bef"/>
+                        <outletCollection property="buttonLabelViews" destination="05r-GP-wCF" collectionClass="NSMutableArray" id="yD3-hA-LdH"/>
+                        <outletCollection property="buttonLabelViews" destination="K6u-E2-PxE" collectionClass="NSMutableArray" id="Y2Q-cB-thQ"/>
+                        <outletCollection property="buttonLabelViews" destination="DY1-uE-LPQ" collectionClass="NSMutableArray" id="nfW-IK-Oyl"/>
+                        <outletCollection property="buttonLabelViews" destination="guc-9s-Ix1" collectionClass="NSMutableArray" id="X6J-ln-Aaw"/>
+                        <outletCollection property="buttonLabels" destination="Jg4-No-1Tq" collectionClass="NSMutableArray" id="dEb-6w-Ids"/>
+                        <outletCollection property="buttonLabels" destination="GcT-Bk-blx" collectionClass="NSMutableArray" id="W7K-qn-fHn"/>
+                        <outletCollection property="buttonLabels" destination="WPy-pV-PSM" collectionClass="NSMutableArray" id="uQb-gu-kjz"/>
+                        <outletCollection property="buttonLabels" destination="pN1-e7-m0a" collectionClass="NSMutableArray" id="YWY-Qt-hQA"/>
+                        <outletCollection property="buttonLabels" destination="cAy-hN-sWW" collectionClass="NSMutableArray" id="CVs-5R-y0x"/>
+                        <segue destination="ZF6-hx-stG" kind="show" identifier="level" id="6rB-eE-9aG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="968.65671641791039" y="9.610983981693364"/>
         </scene>
-        <!--Choose Topic Screen-->
+        <!--TopicViewController-->
         <scene sceneID="LSB-uy-Lvl">
             <objects>
-                <viewController title="Choose Topic Screen" id="ZF6-hx-stG" sceneMemberID="viewController">
+                <viewController title="TopicViewController" id="ZF6-hx-stG" customClass="TopicViewController" customModule="New_Word" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oSd-uM-fEd">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,6 +263,9 @@
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressedTopicButton:" destination="ZF6-hx-stG" eventType="touchUpInside" id="UVm-0n-We7"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -252,6 +288,9 @@
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressedTopicButton:" destination="ZF6-hx-stG" eventType="touchUpInside" id="ZGU-oe-VWf"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -279,6 +318,9 @@
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressedTopicButton:" destination="ZF6-hx-stG" eventType="touchUpInside" id="IyS-0Y-T1U"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -301,6 +343,9 @@
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressedTopicButton:" destination="ZF6-hx-stG" eventType="touchUpInside" id="Azv-pE-rCn"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -336,7 +381,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="USH-pL-fLl"/>
                     <connections>
-                        <segue destination="nJ1-Z0-xNE" kind="show" id="FiD-1x-kxj"/>
+                        <outlet property="catImage" destination="cWt-lD-gQo" id="IWZ-7C-zdT"/>
+                        <outlet property="topicLabel" destination="ovg-Hc-gtZ" id="Ghb-uM-Th8"/>
+                        <outletCollection property="buttonView" destination="M6e-0w-hTh" collectionClass="NSMutableArray" id="rMd-Se-Edy"/>
+                        <outletCollection property="buttonView" destination="yp1-5s-jt5" collectionClass="NSMutableArray" id="9d3-BN-0fH"/>
+                        <outletCollection property="buttonView" destination="05J-dU-PxV" collectionClass="NSMutableArray" id="yvh-ca-geb"/>
+                        <outletCollection property="buttonView" destination="hWA-dX-F5a" collectionClass="NSMutableArray" id="Djq-XP-e5c"/>
+                        <outletCollection property="buttonAppearance" destination="L2x-ir-5tR" collectionClass="NSMutableArray" id="CL4-xu-gk8"/>
+                        <outletCollection property="buttonAppearance" destination="SG0-df-rGs" collectionClass="NSMutableArray" id="Hh9-xL-xZ0"/>
+                        <outletCollection property="buttonAppearance" destination="sDG-T6-Q7w" collectionClass="NSMutableArray" id="MvI-QB-EEa"/>
+                        <outletCollection property="buttonAppearance" destination="mIR-1l-EcJ" collectionClass="NSMutableArray" id="1TT-59-YbZ"/>
+                        <segue destination="nJ1-Z0-xNE" kind="show" identifier="category" id="FiD-1x-kxj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPH-gG-P20" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -364,62 +419,78 @@
             </objects>
             <point key="canvasLocation" x="2579" y="-8"/>
         </scene>
-        <!--Vocablary Screen-->
-        <scene sceneID="Muc-lA-1Ox">
+        <!--Vocablary View Controller-->
+        <scene sceneID="Fk5-Iz-v9F">
             <objects>
-                <tableViewController title="Vocablary Screen" id="UuW-WE-AHa" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="uw1-lZ-7fl">
+                <viewController id="yTH-w1-oun" customClass="VocablaryViewController" customModule="New_Word" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ncu-3t-LKG">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="FgS-Ds-0zp">
-                                <rect key="frame" x="0.0" y="50" width="402" height="143"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FgS-Ds-0zp" id="agI-dm-viE">
-                                    <rect key="frame" x="0.0" y="0.0" width="402" height="143"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jAB-sv-Dbd">
-                                            <rect key="frame" x="0.0" y="0.0" width="402" height="143"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JhG-b1-tca">
+                                <rect key="frame" x="0.0" y="168" width="402" height="589"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="eiW-AK-ZA7" customClass="WordTableViewCell" customModule="New_Word" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="402" height="146.33332824707031"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eiW-AK-ZA7" id="BHN-Ck-0cW" customClass="WordTableViewCell" customModule="New_Word" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="402" height="146.33332824707031"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck7-Pz-Qwe">
-                                                    <rect key="frame" x="0.0" y="0.0" width="201" height="143"/>
-                                                    <fontDescription key="fontDescription" name="STIXTwoText_Medium" family="STIX Two Text" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dmW-YD-9Dg">
-                                                    <rect key="frame" x="201" y="0.0" width="201" height="143"/>
-                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lDt-Wz-pry">
+                                                    <rect key="frame" x="0.0" y="0.0" width="402" height="146.33333333333334"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck7-Pz-Qwe">
+                                                            <rect key="frame" x="0.0" y="0.0" width="201" height="146.33333333333334"/>
+                                                            <fontDescription key="fontDescription" name="STIXTwoText_Medium" family="STIX Two Text" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hrq-wr-1zu">
+                                                            <rect key="frame" x="201" y="0.0" width="201" height="146.33333333333334"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
-                                        </stackView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="jAB-sv-Dbd" secondAttribute="bottom" id="LgO-G2-taN"/>
-                                        <constraint firstAttribute="trailing" secondItem="jAB-sv-Dbd" secondAttribute="trailing" id="QHG-XV-fIx"/>
-                                        <constraint firstItem="jAB-sv-Dbd" firstAttribute="leading" secondItem="agI-dm-viE" secondAttribute="leading" id="m0s-IN-Gi8"/>
-                                        <constraint firstItem="jAB-sv-Dbd" firstAttribute="top" secondItem="agI-dm-viE" secondAttribute="top" id="rmL-JU-dDG"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="UuW-WE-AHa" id="RR8-e2-4Wd"/>
-                            <outlet property="delegate" destination="UuW-WE-AHa" id="ux8-9y-oqA"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="fJy-Yi-ILX"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cLL-xw-4t1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                                            <constraints>
+                                                <constraint firstItem="lDt-Wz-pry" firstAttribute="leading" secondItem="BHN-Ck-0cW" secondAttribute="leading" id="0ra-vo-uf7"/>
+                                                <constraint firstAttribute="trailing" secondItem="lDt-Wz-pry" secondAttribute="trailing" id="7tB-jb-tSw"/>
+                                                <constraint firstAttribute="bottom" secondItem="lDt-Wz-pry" secondAttribute="bottom" id="hIN-1S-Exf"/>
+                                                <constraint firstItem="lDt-Wz-pry" firstAttribute="top" secondItem="BHN-Ck-0cW" secondAttribute="top" id="j2u-IH-6dg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="wordImageView" destination="hrq-wr-1zu" id="VF9-6G-oos"/>
+                                            <outlet property="wordLabel" destination="Ck7-Pz-Qwe" id="OQz-fP-dg0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MUC-rN-v31"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JhG-b1-tca" firstAttribute="top" secondItem="MUC-rN-v31" secondAttribute="top" id="9aZ-yB-P2q"/>
+                            <constraint firstItem="JhG-b1-tca" firstAttribute="leading" secondItem="MUC-rN-v31" secondAttribute="leading" id="ILq-xe-kcx"/>
+                            <constraint firstItem="MUC-rN-v31" firstAttribute="bottom" secondItem="JhG-b1-tca" secondAttribute="bottom" id="XgH-ew-P68"/>
+                            <constraint firstItem="MUC-rN-v31" firstAttribute="trailing" secondItem="JhG-b1-tca" secondAttribute="trailing" id="ouc-wA-EKA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aB6-A2-Fho"/>
+                    <connections>
+                        <outlet property="vocablaryTableView" destination="JhG-b1-tca" id="dmW-OO-BUR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7YO-kR-cuD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3700" y="763"/>
+            <point key="canvasLocation" x="3679" y="777"/>
         </scene>
         <!--Third Tab-->
         <scene sceneID="qCf-ct-MNC">
             <objects>
                 <navigationController title="Third Tab" id="2o3-VM-urw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hWp-XI-PPh"/>
+                    <tabBarItem key="tabBarItem" title="Words" image="gearshape" catalog="system" selectedImage="gearshape.fill" id="hWp-XI-PPh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Om-Tb-uyc">
                         <rect key="frame" x="0.0" y="124" width="402" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -432,10 +503,10 @@
             </objects>
             <point key="canvasLocation" x="2578" y="-992"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="GHL-1S-igP">
             <objects>
-                <viewController id="fTT-Fs-SkP" sceneMemberID="viewController">
+                <viewController id="fTT-Fs-SkP" customClass="SettingsViewController" customModule="New_Word" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RMY-SO-7Ie">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -475,6 +546,9 @@
                                             <fontDescription key="titleFontDescription" name="STIXTwoText_SemiBold" family="STIX Two Text" pointSize="18"/>
                                             <color key="baseForegroundColor" red="0.2790527344" green="0.265972339" blue="0.21920936429999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="changeLevelTopicButton:" destination="fTT-Fs-SkP" eventType="touchUpInside" id="ohL-ff-fXW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -493,6 +567,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QOu-5E-B4w"/>
+                    <connections>
+                        <outlet property="changeLabel" destination="vyM-A4-82z" id="wCp-CM-QVz"/>
+                        <outlet property="levelPicker" destination="ZGD-1s-tEq" id="Pya-qo-nPC"/>
+                        <outlet property="topicPicker" destination="8hn-e1-khE" id="0wK-po-Z70"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufZ-0s-E4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -502,13 +581,13 @@
         <scene sceneID="YiM-PD-QH5">
             <objects>
                 <navigationController title="Second Tab" id="hje-x2-LHH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="square.and.arrow.up.circle" catalog="system" id="eQF-Hp-vHw"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="book.closed" catalog="system" selectedImage="book.closed.fill" id="eQF-Hp-vHw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0nm-oJ-2K8">
                         <rect key="frame" x="0.0" y="124" width="402" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="UuW-WE-AHa" kind="relationship" relationship="rootViewController" id="Grh-oB-kGz"/>
+                        <segue destination="yTH-w1-oun" kind="relationship" relationship="rootViewController" id="zJb-r7-TYa"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0iS-qL-475" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -518,37 +597,41 @@
         <!--Main Logic Screen-->
         <scene sceneID="DJl-PQ-hWX">
             <objects>
-                <viewController title="Main Logic Screen" id="6fi-c7-aeb" sceneMemberID="viewController">
+                <viewController title="Main Logic Screen" id="6fi-c7-aeb" customClass="MainTabController" customModule="New_Word" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JDG-SR-hpW">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GkM-YV-862">
-                                <rect key="frame" x="10" y="0.0" width="382" height="874"/>
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                                 <subviews>
-                                    <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCp-Gj-yEq">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="349.66666666666669"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCp-Gj-yEq">
+                                        <rect key="frame" x="0.0" y="0.0" width="402" height="349.66666666666669"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="SRs-1I-jXc">
-                                                <rect key="frame" x="-218.66666666666666" y="73.666666666666671" width="819.33333333333337" height="202.33333333333331"/>
+                                                <rect key="frame" x="-208.66666666666666" y="73.666666666666671" width="819.33333333333337" height="202.33333333333331"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sta-WU-c4R">
-                                                <rect key="frame" x="10" y="296" width="362" height="43.666666666666686"/>
+                                                <rect key="frame" x="10" y="296" width="382" height="43.666666666666686"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="write a topic for new word" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s7T-hA-U00">
-                                                        <rect key="frame" x="0.0" y="0.0" width="262.66666666666669" height="43.666666666666664"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="282.66666666666669" height="43.666666666666664"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3On-CP-GTc">
-                                                        <rect key="frame" x="267.66666666666669" y="0.0" width="94.333333333333314" height="43.666666666666664"/>
+                                                        <rect key="frame" x="287.66666666666669" y="0.0" width="94.333333333333314" height="43.666666666666664"/>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="tinted" title="generate">
                                                             <fontDescription key="titleFontDescription" name="STIXTwoText_SemiBold" family="STIX Two Text" pointSize="18"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="generateButton:" destination="6fi-c7-aeb" eventType="touchUpInside" id="7PY-Bx-IvR"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -563,20 +646,20 @@
                                             <constraint firstItem="Sta-WU-c4R" firstAttribute="leading" secondItem="LCp-Gj-yEq" secondAttribute="leading" constant="10" id="x4B-81-WQs"/>
                                         </constraints>
                                     </view>
-                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SrE-U1-rdw">
-                                        <rect key="frame" x="0.0" y="369.66666666666669" width="382" height="178.33333333333331"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SrE-U1-rdw">
+                                        <rect key="frame" x="0.0" y="369.66666666666669" width="402" height="178.33333333333331"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EiE-hr-D5g">
-                                                <rect key="frame" x="10" y="10" width="362" height="158.33333333333334"/>
+                                                <rect key="frame" x="10" y="10" width="382" height="158.33333333333334"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFN-6k-FB7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="362" height="79.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="79.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="STIXTwoText_Bold" family="STIX Two Text" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSd-kd-8Xc">
-                                                        <rect key="frame" x="0.0" y="79.333333333333314" width="362" height="79"/>
+                                                        <rect key="frame" x="0.0" y="79.333333333333314" width="382" height="79"/>
                                                         <fontDescription key="fontDescription" name="STIXTwoText-Italic_SemiBold-Italic" family="STIX Two Text" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -595,26 +678,29 @@
                                             <constraint firstAttribute="trailing" secondItem="EiE-hr-D5g" secondAttribute="trailing" constant="10" id="beA-3Y-wAM"/>
                                         </constraints>
                                     </view>
-                                    <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8O-fh-L7C">
-                                        <rect key="frame" x="0.0" y="568" width="382" height="306"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8O-fh-L7C">
+                                        <rect key="frame" x="0.0" y="568" width="402" height="306"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hQi-3P-8f0">
-                                                <rect key="frame" x="10" y="20" width="362" height="196"/>
+                                                <rect key="frame" x="10" y="20" width="382" height="196"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="write your synonym" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLC-W7-Xxh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="362" height="98"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="98"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="STIXTwoText" family="STIX Two Text" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpB-cB-sJY">
-                                                        <rect key="frame" x="0.0" y="103" width="362" height="93"/>
+                                                        <rect key="frame" x="0.0" y="103" width="382" height="93"/>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="tinted" title="check">
                                                             <fontDescription key="titleFontDescription" name="STIXTwoText_SemiBold" family="STIX Two Text" pointSize="18"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="checkSynonymButton:" destination="6fi-c7-aeb" eventType="touchUpInside" id="mdd-WH-nrc"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -643,13 +729,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GkM-YV-862" firstAttribute="top" secondItem="JDG-SR-hpW" secondAttribute="top" id="Bxs-72-mGl"/>
-                            <constraint firstItem="uSK-U9-oJk" firstAttribute="trailing" secondItem="GkM-YV-862" secondAttribute="trailing" constant="10" id="CQw-xa-2t4"/>
+                            <constraint firstItem="uSK-U9-oJk" firstAttribute="trailing" secondItem="GkM-YV-862" secondAttribute="trailing" id="CQw-xa-2t4"/>
                             <constraint firstAttribute="bottom" secondItem="GkM-YV-862" secondAttribute="bottom" id="ozn-mg-o3H"/>
-                            <constraint firstItem="GkM-YV-862" firstAttribute="leading" secondItem="uSK-U9-oJk" secondAttribute="leading" constant="10" id="uN0-zL-WJF"/>
+                            <constraint firstItem="GkM-YV-862" firstAttribute="leading" secondItem="uSK-U9-oJk" secondAttribute="leading" id="uN0-zL-WJF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nst-nl-bl7"/>
                     <connections>
+                        <outlet property="assetImageTop" destination="SRs-1I-jXc" id="7JN-SV-yyO"/>
+                        <outlet property="meaningLabel" destination="sSd-kd-8Xc" id="ZyI-kF-2ep"/>
+                        <outlet property="synonymTextField" destination="WLC-W7-Xxh" id="2QT-ue-iOF"/>
+                        <outlet property="topicTextField" destination="s7T-hA-U00" id="lQH-ep-8SH"/>
+                        <outlet property="wordLabel" destination="oFN-6k-FB7" id="LLw-He-nFV"/>
+                        <outletCollection property="partViews" destination="LCp-Gj-yEq" collectionClass="NSMutableArray" id="JUF-cq-eTu"/>
+                        <outletCollection property="partViews" destination="SrE-U1-rdw" collectionClass="NSMutableArray" id="Jht-wN-QJR"/>
+                        <outletCollection property="partViews" destination="V8O-fh-L7C" collectionClass="NSMutableArray" id="zL1-KX-p2v"/>
+                        <outletCollection property="buttonAppeareance" destination="3On-CP-GTc" collectionClass="NSMutableArray" id="Jys-jS-N4H"/>
+                        <outletCollection property="buttonAppeareance" destination="SpB-cB-sJY" collectionClass="NSMutableArray" id="X3Y-D1-dlR"/>
                         <segue destination="qen-8M-nmG" kind="presentation" id="KVI-J7-ooJ"/>
                     </connections>
                 </viewController>
@@ -660,7 +756,7 @@
         <!--Checking Screen-->
         <scene sceneID="IIC-NP-j2t">
             <objects>
-                <viewController title="Checking Screen" id="qen-8M-nmG" sceneMemberID="viewController">
+                <viewController title="Checking Screen" id="qen-8M-nmG" customClass="SynonymAnswerViewController" customModule="New_Word" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5GO-8w-m48">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -722,6 +818,9 @@
                                                     <fontDescription key="titleFontDescription" name="STIXTwoText_SemiBold" family="STIX Two Text" pointSize="16"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="addPhotoButton:" destination="qen-8M-nmG" eventType="touchUpInside" id="YcA-fe-t7J"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -733,6 +832,9 @@
                                             <fontDescription key="titleFontDescription" name="STIXTwoText_SemiBold" family="STIX Two Text" pointSize="18"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="safeButton:" destination="qen-8M-nmG" eventType="touchUpInside" id="81y-91-V7e"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKy-ZN-tUe">
                                         <rect key="frame" x="0.0" y="379" width="382" height="361"/>
@@ -766,6 +868,18 @@
                             <constraint firstItem="FHL-vJ-Geu" firstAttribute="top" secondItem="4Jn-6Y-GTT" secondAttribute="top" id="S21-YO-Ucs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="checkLabel" destination="N8V-eZ-Mrd" id="Jcg-GW-GmZ"/>
+                        <outlet property="meaningLabel" destination="2G1-iI-2pH" id="j4n-Yf-YFc"/>
+                        <outlet property="photoViewImage" destination="nEe-PL-fap" id="hHD-wb-kR9"/>
+                        <outlet property="synonymLabel" destination="e0T-Wb-By5" id="uea-Iy-Yx7"/>
+                        <outlet property="wordLabel" destination="tHx-oA-7HV" id="CI1-Qh-wsS"/>
+                        <outletCollection property="buttonAppearance" destination="9EC-UZ-tsm" collectionClass="NSMutableArray" id="7Hc-lL-YS9"/>
+                        <outletCollection property="buttonAppearance" destination="Uii-R7-OKM" collectionClass="NSMutableArray" id="wLB-ec-2n6"/>
+                        <outletCollection property="labelImageViews" destination="cqP-CD-9S3" collectionClass="NSMutableArray" id="OuD-Mc-h1b"/>
+                        <outletCollection property="labelImageViews" destination="NKy-ZN-tUe" collectionClass="NSMutableArray" id="HJ1-Ti-2Em"/>
+                        <outletCollection property="labelImageViews" destination="VaU-e2-fSz" collectionClass="NSMutableArray" id="DXt-FX-jCL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LnI-GA-NP6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -793,7 +907,7 @@
         <scene sceneID="w0y-yk-hcR">
             <objects>
                 <navigationController title="Main" automaticallyAdjustsScrollViewInsets="NO" id="MCb-Ft-dVr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="oMY-OW-2cm"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="long.text.page.and.pencil" catalog="system" selectedImage="long.text.page.and.pencil.fill" id="oMY-OW-2cm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gL3-rW-46a">
                         <rect key="frame" x="0.0" y="124" width="402" height="44"/>
@@ -810,14 +924,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Generated Image December 15, 2025 - 2_59PM" width="539" height="752"/>
         <image name="Image" width="819" height="980"/>
         <image name="Image 1" width="639" height="783"/>
         <image name="Image 3" width="930" height="849"/>
-        <image name="square.and.arrow.up.circle" catalog="system" width="128" height="123"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="book.closed" catalog="system" width="115" height="128"/>
+        <image name="book.closed.fill" catalog="system" width="115" height="128"/>
+        <image name="firstPageMe" width="539" height="752"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="long.text.page.and.pencil" catalog="system" width="112" height="128"/>
+        <image name="long.text.page.and.pencil.fill" catalog="system" width="112" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

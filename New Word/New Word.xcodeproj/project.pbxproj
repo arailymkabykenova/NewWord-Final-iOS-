@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		4179F1D52EEFF55D00889D8B /* New Word.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "New Word.app"; path = "/Users/arajlymkabykenova/Desktop/iosProject/New Word/build/Debug-iphoneos/New Word.app"; sourceTree = "<absolute>"; };
+		41EBBAE12EF28C0C00256E9A /* New Word.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New Word.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -46,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				4179F1D72EEFF55D00889D8B /* New Word */,
+				41EBBAE12EF28C0C00256E9A /* New Word.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +72,7 @@
 			packageProductDependencies = (
 			);
 			productName = "New Word";
-			productReference = 4179F1D52EEFF55D00889D8B /* New Word.app */;
+			productReference = 41EBBAE12EF28C0C00256E9A /* New Word.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,6 +137,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25886589NS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "New Word/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -163,6 +165,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25886589NS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "New Word/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
